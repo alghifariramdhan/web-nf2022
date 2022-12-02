@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurs</title>
+    <script>
+        function convert(){
+            let nilaiAwal= document.getElementById("valuta1").value;
+            let hitungKurs = document.getElementById("nilaiTukar").value;
+            let hasil;
+
+
+            if(hitungKurs=="toIDR"){
+                hasil = nilaiAwal * 14650;
+
+            } else if(hitungKurs=="toUSD"){
+            hasil = nilaiAwal / 14650;
+            } else {
+                hasil=0;
+            }
+            document.getElementById("valuta2").value = hasil;
+
+        }
+    </script>
+</head>
+<body>
+    <h1>Menghitung Kurs</h1>
+    <label for="">Nilai Awal</label>
+    <input id="valuta1" type="number"> 
+    <select id="nilaiTukar" onchange="convert()">
+        <option value="0">-- pilih kurs mata uang asing --</option>
+        <option value="toIDR">USD to IDR</option>
+        <option value="toIDR">IDR to USD</option>
+    </select>
+    <label for="">Nilai Akhir</label>
+    <input id="valuta2" type="number" readonly>
+
+
+</body>
+</html>
