@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan Barang</title>
+</head>
+
+<body style="background-color:rgb(156, 108, 4);width:99%;font-family:Geneva, Verdana, sans-serif">
+    <fieldset>
+        <legend>
+            <div>
+                <table
+                    style="border-style: groove; width: 100%;margin-left: auto;margin-right: auto;background-color:rgb(62, 63, 90)">
+                    <tr>
+                        <td align="center" style="width: 200px;">
+                            <a href="" style="text-decoration:none;color:rgb(7, 7, 7);">Home</a>
+                        </td>
+                        <td style="color:rgb(0, 0, 7);">|</td>
+                        <td align="center" style="width: 300px;">
+                            <a href="" style="text-decoration:none;color:rgb(10, 10, 10);">Generate Link</a>
+                        </td>
+                        <td style="color:rgb(8, 2, 2);">|</td>
+                        <td align="center" style="width: 300px;">
+                            <a href="" style="text-decoration:none;color:rgb(2, 0, 0);">Transaction History</a>
+                        </td>
+                        <td style="color:rgb(7, 0, 0);">|</td>
+                        <td align="center" style="width: 300px;">
+                            <a href="" style="text-decoration:none;color:rgb(8, 8, 8);">Policy</a>
+                        </td>
+                        <td style="color:rgb(8, 0, 0);">|</td>
+                        <td align="center" style="width: 200px;">
+                            <a href="" style="text-decoration:none;color:rgb(8, 1, 1);">Logout</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </legend>
+        <br>
+        <div style="width: 470px; float: left; text-align: center;">
+            <form method="post" enctype="" action=""">
+                <table>
+                <tr>
+                    <td>
+                    <img src="assets/image/RT.jpeg" alt="" style="width: 195px;margin-left:195px">
+                </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="">
+                            <input type="submit" value="Upload Picture"
+                                style="margin-left: 200px;;border-style: groove;background-color:rgb(61, 61, 65)">
+                        </a>
+                    </td>
+                </tr>
+                </table>
+            </form>
+        </div>
+        <div style="margin-left: 40%;">
+            <form method="post">
+                <table>
+                    <tr>
+                        <td>Title Here</td>
+                        <td>:</td>
+                        <td><input type="text" name="title"></td>
+                    </tr>
+                    <tr>
+                        <td>Description</td>
+                        <td>:</td>
+                        <td><textarea name="description" cols="30" rows="5"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Account Number</td>
+                        <td>:</td>
+                        <td><input type="text" name="account number"></td>
+                    </tr>
+                    <tr>
+                        <td>Bank</td>
+                        <td>:</td>
+                        <td><input type="text" name="bank"></td>
+                    </tr>
+                    <tr>
+                        <td>Account holder</td>
+                        <td>:</td>
+                        <td><input type="text" name="account holder"></td>
+                    </tr>
+                    <tr>
+                        <td>Transaction</td>
+                        <td>:</td>
+                        <td><select name="pizzas" id="number">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                            </select></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>
+                            <p>*if the transaction is for 3 person, choose 3 from the drop-down list</p>
+                            <p style="color:rgb(72, 10, 241);"><input type="checkbox" name="transaction">Send to mobile
+                                phone</p>
+                            <p style="color:rgb(56, 25, 230);"><input type="checkbox" name="transaction">Send to Email</p>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>Send to Mobile Phone</td>
+                        <td>:</td>
+                        <td><input type="text" name="mobile_phone"></td>
+                    </tr>
+                    <tr>
+                        <td>Send to Email</td>
+                        <td>:</td>
+                        <td><input type="text" name="email"></td>
+                    </tr>
+                </table>
+                <br>
+                <br>
+                <input type="submit" value="Generate Nabr Link"
+                    style="margin-left: 100px;border-style: groove;background-color:rgb(47, 43, 63)">
+            </form>
+        </div>
+        <br><br><br>
+    </fieldset>
+</body>
+
+</html>
